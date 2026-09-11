@@ -16,6 +16,22 @@ images/        renders, portrait
 assets/        logo.png, cv.pdf
 ```
 
+## Theme
+
+Type, colour and spacing are all tokens in the `:root` block of `style.css`.
+The type scale (`--fs-hero` through `--fs-micro`) is a ~1.26 ratio — change a
+token rather than a rule so the steps stay in proportion.
+
+Display face is Montserrat (a free stand-in for Gotham, which is commercial
+and not available on Google Fonts). Body is Inter, metadata IBM Plex Mono.
+
+The logo's angled slice is the recurring motif: `--cut` sets its depth and
+drives the diagonal edges on `.section--dark`, `.section--tint` and `.footer`,
+the skewed hero rule and section-number slashes, the clipped corners on
+buttons and chips, and the notched corner on the hero and portrait images.
+Note that an element gets only one `clip-path` — the image frames use theirs
+for the scroll-reveal wipe, so corner notches are applied to the `<img>`.
+
 ## Editing content
 
 - **Project text, metadata, lightbox images** → `PROJECTS` array at the top of `script.js`
