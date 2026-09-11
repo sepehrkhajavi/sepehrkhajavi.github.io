@@ -54,11 +54,30 @@ Open in Drive" link, so the section stays usable even where embeds are refused.
 wrapper stripped, used to publish the shareable preview. It is NOT the deliverable —
 `index.html` is. Regenerate it after editing `index.html`.
 
+## Deploying to GitHub Pages
+
+1. Create a repo on GitHub. Naming it `<username>.github.io` gives the site
+   that address directly; any other name serves it at
+   `https://<username>.github.io/<repo>`.
+2. From this folder:
+
+   ```
+   git remote add origin https://github.com/<username>/<repo>.git
+   git branch -M main
+   git push -u origin main
+   ```
+3. On GitHub: Settings → Pages → Source: "Deploy from a branch",
+   branch `main`, folder `/ (root)`. Save.
+
+The site is live a minute or two later. `.nojekyll` is committed so Pages
+serves the files as-is rather than running them through Jekyll.
+
 ## Still outstanding
 
-- Projects 5 and 6 — still placeholder cards
-- LinkedIn / Instagram / Behance links are `href="#"` and go nowhere
+- Social links are commented out in `index.html` — add real profile URLs and
+  uncomment
 - Education years are blank
-- Poster frames for the 8 Motion cards (needs the video files locally)
-- Real project titles for projects 2 and 3 (currently working titles)
+- Poster frames for the 7 Drive reels (needs the video files locally; the
+  YouTube one already has a real poster)
+- Real project titles for projects 2, 3 and 4 (currently working titles)
 - Kitchen project description is missing its final sentence
