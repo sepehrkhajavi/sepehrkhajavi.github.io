@@ -1,5 +1,7 @@
 # Sepehr Khajavi — Portfolio
 
+**Live: https://sepehrkhajavi.github.io**
+
 Static one-page portfolio. No build step, no npm, no database.
 Open `index.html` in a browser, or drag this folder onto Netlify to deploy.
 
@@ -54,23 +56,23 @@ Open in Drive" link, so the section stays usable even where embeds are refused.
 wrapper stripped, used to publish the shareable preview. It is NOT the deliverable —
 `index.html` is. Regenerate it after editing `index.html`.
 
-## Deploying to GitHub Pages
+## Publishing a change
 
-1. Create a repo on GitHub. Naming it `<username>.github.io` gives the site
-   that address directly; any other name serves it at
-   `https://<username>.github.io/<repo>`.
-2. From this folder:
+The repo is `sepehrkhajavi/sepehrkhajavi.github.io` and GitHub Pages serves
+`main` from the root. To publish an edit:
 
-   ```
-   git remote add origin https://github.com/<username>/<repo>.git
-   git branch -M main
-   git push -u origin main
-   ```
-3. On GitHub: Settings → Pages → Source: "Deploy from a branch",
-   branch `main`, folder `/ (root)`. Save.
+```
+git add -A
+git commit -m "what changed"
+git push
+```
 
-The site is live a minute or two later. `.nojekyll` is committed so Pages
-serves the files as-is rather than running them through Jekyll.
+The live site updates about a minute later. Remember to bump the `?v=` number
+on the CSS and JS links in `index.html` when you change those files, or
+browsers will keep serving the cached copies.
+
+`.nojekyll` is committed so Pages serves the files as-is rather than running
+them through Jekyll.
 
 ## Still outstanding
 
