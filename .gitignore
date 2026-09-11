@@ -1,0 +1,8 @@
+# macOS
+.DS_Store
+
+# local tooling / editor config
+.claude/
+
+# generated preview copy — not part of the deployed site
+artifact.html
