@@ -1,0 +1,426 @@
+<title>Sepehr Khajavi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Inter:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=12">
+<script>document.documentElement.classList.add('js')</script>
+
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <a href="#top" class="nav__mark" aria-label="SK Studio — home">
+    <img src="assets/logo.png" alt="SK Studio" class="nav__logo">
+    <span class="nav__studio">Studio</span>
+  </a>
+  <nav class="nav__links">
+    <a href="#work">Work</a>
+    <a href="#motion">Motion</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button class="nav__toggle" id="navToggle" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero__meta hero__meta--top">
+    <span>Architectural&nbsp;Design</span>
+    <span>Portfolio&nbsp;2026</span>
+  </div>
+
+  <div class="hero__inner">
+    <div class="hero__type">
+      <h1 class="hero__name">
+        <span class="line"><span>Sepehr</span></span>
+        <span class="line"><span>Khajavi</span></span>
+      </h1>
+      <div class="rule"></div>
+      <p class="hero__role">
+        Architectural&nbsp;Designer<br>
+        &amp; 3D&nbsp;Visualization&nbsp;Artist
+      </p>
+      <p class="hero__blurb">
+        Independent architectural design, 3D modeling, visualization, and spatial
+        studies across residential, commercial, and interior projects.
+      </p>
+      <a href="#work" class="btn btn--ghost">View Selected Work</a>
+    </div>
+
+    <div class="hero__slab">
+      <div class="frame frame--hero reveal">
+        <img src="images/p1-01.jpg" alt="Mixed-use urban complex at dusk, Isfahan" fetchpriority="high">
+      </div>
+      <div class="hero__caption">
+        <span class="mono">Fig.&nbsp;01</span>
+        <span>Mixed-Use Urban Complex — Isfahan, 2026</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero__meta hero__meta--bottom">
+    <span>01 / Selected Work</span>
+    <span class="scroll-hint">Scroll <em>↓</em></span>
+  </div>
+</section>
+
+<!-- ============ MARQUEE ============ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span>3D Modeling</span><i>◆</i><span>Interior Design</span><i>◆</i><span>Exterior Design</span><i>◆</i><span>Animation</span><i>◆</i><span>Visualization</span><i>◆</i>
+    <span>3D Modeling</span><i>◆</i><span>Interior Design</span><i>◆</i><span>Exterior Design</span><i>◆</i><span>Animation</span><i>◆</i><span>Visualization</span><i>◆</i>
+  </div>
+</div>
+
+<!-- ============ WORK ============ -->
+<section class="section" id="work">
+  <div class="section__head">
+    <span class="mono num">01</span>
+    <h2 class="section__title">Selected<br>Work</h2>
+    <p class="section__note">Residential, commercial, and interior work — each project
+      showing a different part of the process: massing, material, light, motion.</p>
+  </div>
+
+  <div class="filters" id="filters">
+    <button class="chip is-active" data-filter="all">All</button>
+    <button class="chip" data-filter="3d">3D Modeling</button>
+    <button class="chip" data-filter="interior">Interior</button>
+    <button class="chip" data-filter="exterior">Exterior</button>
+  </div>
+
+  <div class="work-grid" id="workGrid">
+
+    <article class="card sp-a" data-cat="exterior" data-project="0">
+      <div class="frame frame--wide reveal">
+        <img src="images/p1-02-thumb.jpg" alt="Mixed-use urban complex, street elevation, Isfahan" loading="lazy">
+      </div>
+      <div class="card__meta">
+        <span class="mono">Aug 2026 · Exterior Design · Isfahan</span>
+        <h3>Mixed-Use Urban Complex</h3>
+      </div>
+    </article>
+
+    <article class="card sp-b" data-cat="interior" data-project="1">
+      <div class="frame frame--portrait reveal">
+        <img src="images/p2-01-thumb.jpg" alt="Contemporary kitchen interior with ivory cabinetry and walnut island" loading="lazy">
+      </div>
+      <div class="card__meta">
+        <span class="mono">Interior Design</span>
+        <h3>Contemporary Kitchen Interior</h3>
+      </div>
+    </article>
+
+    <article class="card sp-c" data-cat="interior 3d" data-project="2">
+      <div class="frame frame--square reveal">
+        <img src="images/p3-01-thumb.jpg" alt="Warm contemporary living room with herringbone timber floor and full-height glazing" loading="lazy">
+      </div>
+      <div class="card__meta">
+        <span class="mono">Self-Initiated · Interior</span>
+        <h3>Living &amp; Dining Study</h3>
+      </div>
+    </article>
+
+    <article class="card sp-d" data-cat="interior 3d" data-project="3">
+      <div class="frame frame--wide reveal">
+        <img src="images/p4-01-thumb.jpg" alt="Kitchen in the darker material option, graphite cabinetry with lit timber niches" loading="lazy">
+      </div>
+      <div class="card__meta">
+        <span class="mono">Interior · Two Material Options</span>
+        <h3>Kitchen Material Study</h3>
+      </div>
+    </article>
+
+
+
+  </div>
+</section>
+
+<!-- ============ MOTION (inverted) ============ -->
+<section class="section section--dark" id="motion">
+  <div class="section__head">
+    <span class="mono num">02</span>
+    <h2 class="section__title">Motion</h2>
+    <p class="section__note">Eight animated studies — walkthroughs, feature details, and
+      client presentation work. Movement through space, and how light changes across it.</p>
+  </div>
+
+  <div class="reels">
+    <figure class="reel reveal">
+      <a class="reel__video" data-provider="drive" data-video="1DCxU0NoaBMTBaiUzODG50JpC2eDQh2Jz"
+         href="https://drive.google.com/file/d/1DCxU0NoaBMTBaiUzODG50JpC2eDQh2Jz/view" target="_blank" rel="noopener"
+         aria-label="Play Harmon Logo Living Room Presentation">
+        <span class="reel__play" aria-hidden="true"></span>
+      </a>
+      <figcaption>
+        <span class="mono">Reel 01</span>
+        <h3>Harmon Logo Living Room Presentation</h3>
+              <a class="reel__out" href="https://drive.google.com/file/d/1DCxU0NoaBMTBaiUzODG50JpC2eDQh2Jz/view" target="_blank" rel="noopener">Open in Drive ↗</a>
+      </figcaption>
+    </figure>
+    <figure class="reel reveal">
+      <a class="reel__video" data-provider="drive" data-video="1J7DRPybmZpaSaZsVSsz16v9uw6WB02pe"
+         href="https://drive.google.com/file/d/1J7DRPybmZpaSaZsVSsz16v9uw6WB02pe/view" target="_blank" rel="noopener"
+         aria-label="Play Modern Kitchen Interior Animation">
+        <span class="reel__play" aria-hidden="true"></span>
+      </a>
+      <figcaption>
+        <span class="mono">Reel 02</span>
+        <h3>Modern Kitchen Interior Animation</h3>
+              <a class="reel__out" href="https://drive.google.com/file/d/1J7DRPybmZpaSaZsVSsz16v9uw6WB02pe/view" target="_blank" rel="noopener">Open in Drive ↗</a>
+      </figcaption>
+    </figure>
+    <figure class="reel reveal">
+      <a class="reel__video" data-provider="drive" data-video="13eLCCFqz2_LO2odNeA9vUAEbmoR1A4OG"
+         href="https://drive.google.com/file/d/13eLCCFqz2_LO2odNeA9vUAEbmoR1A4OG/view" target="_blank" rel="noopener"
+         aria-label="Play Luxury Pool Design Animation I">
+        <span class="reel__play" aria-hidden="true"></span>
+      </a>
+      <figcaption>
+        <span class="mono">Reel 03</span>
+        <h3>Luxury Pool Design Animation I</h3>
+              <a class="reel__out" href="https://drive.google.com/file/d/13eLCCFqz2_LO2odNeA9vUAEbmoR1A4OG/view" target="_blank" rel="noopener">Open in Drive ↗</a>
+      </figcaption>
+    </figure>
+    <figure class="reel reveal">
+      <a class="reel__video" data-provider="youtube" data-video="SUnZfPAQ8RI"
+         href="https://youtu.be/SUnZfPAQ8RI" target="_blank" rel="noopener"
+         aria-label="Play Luxury Pool Design Animation II">
+        <img class="reel__poster" src="images/reel-pool-evening.jpg" alt="" loading="lazy">
+        <span class="reel__play" aria-hidden="true"></span>
+      </a>
+      <figcaption>
+        <span class="mono">Reel 04</span>
+        <h3>Luxury Pool Design Animation II</h3>
+              <a class="reel__out" href="https://youtu.be/SUnZfPAQ8RI" target="_blank" rel="noopener">Open on YouTube ↗</a>
+      </figcaption>
+    </figure>
+    <figure class="reel reveal">
+      <a class="reel__video" data-provider="drive" data-video="1FqmO0xd2DqZNKpFj-LWGeaTAZDTMvdev"
+         href="https://drive.google.com/file/d/1FqmO0xd2DqZNKpFj-LWGeaTAZDTMvdev/view" target="_blank" rel="noopener"
+         aria-label="Play Residential Lobby Design Animation">
+        <span class="reel__play" aria-hidden="true"></span>
+      </a>
+      <figcaption>
+        <span class="mono">Reel 05</span>
+        <h3>Residential Lobby Design Animation</h3>
+              <a class="reel__out" href="https://drive.google.com/file/d/1FqmO0xd2DqZNKpFj-LWGeaTAZDTMvdev/view" target="_blank" rel="noopener">Open in Drive ↗</a>
+      </figcaption>
+    </figure>
+    <figure class="reel reveal">
+      <a class="reel__video" data-provider="drive" data-video="1TxDzEtfGqnigHsnNgvpGJqe-0U7BlVDh"
+         href="https://drive.google.com/file/d/1TxDzEtfGqnigHsnNgvpGJqe-0U7BlVDh/view" target="_blank" rel="noopener"
+         aria-label="Play Modern Bathroom Design Animation">
+        <span class="reel__play" aria-hidden="true"></span>
+      </a>
+      <figcaption>
+        <span class="mono">Reel 06</span>
+        <h3>Modern Bathroom Design Animation</h3>
+              <a class="reel__out" href="https://drive.google.com/file/d/1TxDzEtfGqnigHsnNgvpGJqe-0U7BlVDh/view" target="_blank" rel="noopener">Open in Drive ↗</a>
+      </figcaption>
+    </figure>
+    <figure class="reel reveal">
+      <a class="reel__video" data-provider="drive" data-video="17wDcVRKeFZ8-hfyoqx0rWM0qu666yjez"
+         href="https://drive.google.com/file/d/17wDcVRKeFZ8-hfyoqx0rWM0qu666yjez/view" target="_blank" rel="noopener"
+         aria-label="Play House Gym Interior Animation">
+        <span class="reel__play" aria-hidden="true"></span>
+      </a>
+      <figcaption>
+        <span class="mono">Reel 07</span>
+        <h3>House Gym Interior Animation</h3>
+              <a class="reel__out" href="https://drive.google.com/file/d/17wDcVRKeFZ8-hfyoqx0rWM0qu666yjez/view" target="_blank" rel="noopener">Open in Drive ↗</a>
+      </figcaption>
+    </figure>
+    <figure class="reel reveal">
+      <a class="reel__video" data-provider="drive" data-video="1D9zxfhtJ8iOXXb6mHno6MV6mpFmq5OAw"
+         href="https://drive.google.com/file/d/1D9zxfhtJ8iOXXb6mHno6MV6mpFmq5OAw/view" target="_blank" rel="noopener"
+         aria-label="Play Modern Fireplace Feature Animation">
+        <span class="reel__play" aria-hidden="true"></span>
+      </a>
+      <figcaption>
+        <span class="mono">Reel 08</span>
+        <h3>Modern Fireplace Feature Animation</h3>
+              <a class="reel__out" href="https://drive.google.com/file/d/1D9zxfhtJ8iOXXb6mHno6MV6mpFmq5OAw/view" target="_blank" rel="noopener">Open in Drive ↗</a>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section" id="about">
+  <div class="section__head">
+    <span class="mono num">03</span>
+    <h2 class="section__title">About</h2>
+  </div>
+
+  <div class="about">
+    <div class="about__portrait">
+      <div class="frame frame--portrait reveal">
+        <img src="images/portrait.jpg" alt="Portrait of Sepehr Khajavi" loading="lazy">
+      </div>
+      <span class="mono caption">Sepehr Khajavi</span>
+    </div>
+    <div class="about__text">
+      <p class="lead">I’m an architectural designer and 3D visualization artist with a
+        strong passion for architecture, spatial design, and visual storytelling.</p>
+      <p>As a newcomer to the profession, I approach each project with curiosity, energy,
+        and a constant desire to learn. My experience includes architectural modeling,
+        rendering, interior and exterior design studies, and professional collaborations
+        on residential and commercial projects.</p>
+      <p>I see the early stage of my career as an opportunity to explore, improve, and
+        develop a clear design identity. I’m especially interested in the relationship
+        between form, material, light, and atmosphere, and I enjoy transforming ideas into
+        detailed and engaging visual experiences. With every project, my goal is to
+        strengthen both my technical skills and architectural thinking while creating work
+        that is thoughtful, contemporary, and visually compelling.</p>
+      <a href="assets/cv.pdf" class="btn btn--solid" download>↓ Download CV</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CAPABILITIES ============ -->
+<section class="section" id="skills">
+  <div class="section__head">
+    <span class="mono num">04</span>
+    <h2 class="section__title">Capabilities</h2>
+  </div>
+
+  <div class="capabilities">
+    <div class="capabilities__col">
+      <span class="mono tier">Software</span>
+      <div class="skillset">
+        <div class="skill">
+          <span class="skill__name">AutoCAD</span>
+          <span class="meter" role="img" aria-label="5 out of 5"><i class="dot"></i><i class="dot"></i><i class="dot"></i><i class="dot"></i><i class="dot"></i></span>
+        </div>
+        <div class="skill">
+          <span class="skill__name">D5 Renderer</span>
+          <span class="meter" role="img" aria-label="5 out of 5"><i class="dot"></i><i class="dot"></i><i class="dot"></i><i class="dot"></i><i class="dot"></i></span>
+        </div>
+        <div class="skill">
+          <span class="skill__name">Revit</span>
+          <span class="meter" role="img" aria-label="4 out of 5"><i class="dot"></i><i class="dot"></i><i class="dot"></i><i class="dot"></i><i class="dot dot--off"></i></span>
+        </div>
+        <div class="skill">
+          <span class="skill__name">SketchUp</span>
+          <span class="meter" role="img" aria-label="4 out of 5"><i class="dot"></i><i class="dot"></i><i class="dot"></i><i class="dot"></i><i class="dot dot--off"></i></span>
+        </div>
+        <div class="skill">
+          <span class="skill__name">3ds Max</span>
+          <span class="meter" role="img" aria-label="4 out of 5"><i class="dot"></i><i class="dot"></i><i class="dot"></i><i class="dot"></i><i class="dot dot--off"></i></span>
+        </div>
+        <div class="skill">
+          <span class="skill__name">Corona Renderer</span>
+          <span class="meter" role="img" aria-label="4 out of 5"><i class="dot"></i><i class="dot"></i><i class="dot"></i><i class="dot"></i><i class="dot dot--off"></i></span>
+        </div>
+        <div class="skill">
+          <span class="skill__name">Photoshop</span>
+          <span class="meter" role="img" aria-label="4 out of 5"><i class="dot"></i><i class="dot"></i><i class="dot"></i><i class="dot"></i><i class="dot dot--off"></i></span>
+        </div>
+      </div>
+    </div>
+    <div class="capabilities__col">
+      <span class="mono tier">Languages</span>
+      <div class="skillset">
+        <div class="skill"><span class="skill__name">Persian</span><span class="lang">Native</span></div>
+        <div class="skill"><span class="skill__name">English</span><span class="lang">IELTS 7.5</span></div>
+        <div class="skill"><span class="skill__name">French</span><span class="lang">B1</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section class="section" id="experience">
+  <div class="section__head">
+    <span class="mono num">05</span>
+    <h2 class="section__title">Experience</h2>
+    <p class="section__note">Around three years of practical experience across
+      professional work and an internship — architectural modeling, visualization,
+      and design development on residential and commercial projects.</p>
+  </div>
+
+  <div class="timeline">
+    <div class="row reveal">
+      <span class="mono row__date">2024 — Present</span>
+      <div class="row__body">
+        <h3>3D Modeler</h3>
+        <span class="org">Harmon Design Office — Toronto, Ontario, Canada</span>
+        <ul class="row__list">
+          <li>Develop 3D models and architectural visualizations for concept and
+            presentation work across residential and commercial projects.</li>
+          <li>Collaborate remotely to convert design ideas into accurate digital models.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row reveal">
+      <span class="mono row__date">2023 · 6 months</span>
+      <div class="row__body">
+        <h3>Architecture Intern</h3>
+        <span class="org">ARBA Office — Karaj, Iran</span>
+        <ul class="row__list">
+          <li>Assisted with architectural drafting, 3D modeling, and design development.</li>
+          <li>Supported preparation of drawings, presentations, and project documentation.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EDUCATION ============ -->
+<section class="section" id="education">
+  <div class="section__head">
+    <span class="mono num">06</span>
+    <h2 class="section__title">Education</h2>
+  </div>
+  <div class="timeline">
+    <div class="row reveal">
+      <span class="mono row__date"><!-- add years, e.g. 2021 — 2026 --></span>
+      <div class="row__body">
+        <h3>Bachelor of Architecture</h3>
+        <span class="org">Imam Khomeini International University — Qazvin, Iran</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section section--contact" id="contact">
+  <div class="section__head">
+    <span class="mono num">07</span>
+    <h2 class="section__title">Contact</h2>
+  </div>
+  <div class="contact">
+    <a class="contact__email" href="mailto:khajavisep@gmail.com">Khajavisep@gmail.com</a>
+    <div class="contact__links">
+      <span class="contact__place">Karaj, Iran</span>
+      <!-- Add real profile URLs here, then uncomment:
+      <a href="https://www.linkedin.com/in/USERNAME">LinkedIn</a>
+      <a href="https://www.instagram.com/USERNAME">Instagram</a>
+      <a href="https://www.behance.net/USERNAME">Behance</a>
+      -->
+      <a href="assets/cv.pdf" download>CV (PDF)</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <span class="mono">© 2026 Sepehr Khajavi</span>
+  <span class="mono">SK Studio</span>
+</footer>
+
+<!-- ============ LIGHTBOX ============ -->
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-hidden="true">
+  <button class="lb__close" id="lbClose" aria-label="Close">✕</button>
+  <button class="lb__nav lb__nav--prev" id="lbPrev" aria-label="Previous">←</button>
+  <button class="lb__nav lb__nav--next" id="lbNext" aria-label="Next">→</button>
+  <div class="lb__inner">
+    <div class="lb__stage" id="lbStage"></div>
+    <aside class="lb__info">
+      <span class="mono" id="lbIndex">01 / 06</span>
+      <h3 id="lbTitle"></h3>
+      <dl id="lbSpecs"></dl>
+      <p id="lbDesc"></p>
+    </aside>
+  </div>
+</div>
+
+<script src="script.js?v=12"></script>
