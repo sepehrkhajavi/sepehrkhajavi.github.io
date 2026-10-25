@@ -4,10 +4,10 @@
    ============================================================ */
 
 :root{
-  --paper:#F2F1ED;
+  --paper:#E6F3FF;
   --ink:#141414;
   --grey:#8A8A85;
-  --paper-2:#E8E6DF;
+  --paper-2:#D8EAFA;
   --hair:#D8D6D0;
   --accent:#C8552A;
 
@@ -59,7 +59,7 @@ ul{margin:0;padding:0;list-style:none}
   border-bottom:1px solid transparent;
   transition:background .4s var(--ease),border-color .4s var(--ease),padding .4s var(--ease);
 }
-.nav.is-stuck{background:rgba(242,241,237,.88);backdrop-filter:blur(14px);
+.nav.is-stuck{background:rgba(230,243,255,.88);backdrop-filter:blur(14px);
   border-bottom-color:var(--hair);padding-block:11px}
 .nav.is-stuck .nav__logo{height:34px}
 .nav__mark{display:flex;align-items:center;gap:11px}
